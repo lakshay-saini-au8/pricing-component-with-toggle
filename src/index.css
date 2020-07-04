@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --vlbg: hsl(240, 78%, 98%);
+  --lgb: hsl(234, 14%, 74%);
+  --gb: hsl(233, 13%, 49%);
+  --dgb: hsl(232, 13%, 33%);
+  --box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 15px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--vlbg);
+  background-image: url(./img/bg-top.svg), url(./img/bg-bottom.svg);
+  background-position: right top, bottom left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 41rem 49rem, 35rem;
+}
+
+@media (max-width: 500px) {
+  body {
+    background-image: url(./img/bg-top.svg);
+    background-position: right -16rem top -5rem;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 30rem;
+  }
+}

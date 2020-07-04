@@ -1,0 +1,112 @@
+.PricingItem {
+  flex-basis: 21%;
+  max-width: 21%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  background-color: #fff;
+  box-shadow: 0px 2px 22px 1px hsla(237, 24%, 55%, 0.35);
+  border-radius: 5px;
+}
+
+.PricingItem p.title {
+  color: var(--gb);
+}
+.PricingItem p.amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dgb);
+  font-size: 5rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+.PricingItem p.amount span {
+  font-size: 2.5rem;
+  padding-right: 0.5rem;
+}
+.PricingItem .listOption {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.PricingItem .listOption ul {
+  list-style-type: none;
+  width: 100%;
+  text-align: center;
+}
+.PricingItem .listOption ul li:first-child {
+  border-top: 1px solid var(--vlbg);
+}
+.PricingItem .listOption ul li {
+  border-bottom: 1px solid var(--vlbg);
+  padding: 1.2rem 0;
+  color: var(--gb);
+}
+
+.PricingItem .moreBtn {
+  padding-top: 2rem;
+  width: 100%;
+}
+.PricingItem .moreBtn p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(237, 63%, 64%);
+  width: 100%;
+  box-shadow: var(--box-shadow);
+  padding: 0.5rem 0rem;
+  border-radius: 5px;
+  color: #fff;
+  border: 1px solid hsl(237, 63%, 64%);
+  transition: all 0.3s ease;
+}
+.PricingItem .moreBtn p:hover {
+  background: #fff;
+  color: hsl(237, 63%, 64%);
+  border: 1px solid hsl(237, 63%, 64%);
+}
+
+/* recommend  */
+.PricingItem.isRecommended {
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: #fff;
+  padding: 5rem 2rem;
+}
+.PricingItem.isRecommended p.title {
+  color: #fff;
+}
+.PricingItem.isRecommended p.amount {
+  color: #fff;
+  font-size: 5rem;
+  padding: 2rem;
+}
+.PricingItem.isRecommended .listOption ul li {
+  color: #fff;
+}
+.PricingItem.isRecommended .moreBtn p {
+  background: #fff;
+  color: hsl(237, 63%, 64%);
+  border: 1px solid #fff;
+  transition: all 0.3s ease;
+}
+.PricingItem.isRecommended .moreBtn p:hover {
+  background: hsl(237, 63%, 64%);
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+@media (max-width: 830px) {
+  .PricingItem {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .PricingItem.isRecommended {
+    padding: 3rem 2rem;
+  }
+}
